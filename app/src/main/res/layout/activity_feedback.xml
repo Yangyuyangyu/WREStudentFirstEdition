@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6ed56a"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:onClick="onBack"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/back_ico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_data"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white_color"
+        android:gravity="top"
+        android:hint="请在这里填写建议，我们重视每个反馈的声音，我们将不断改进 ，感谢您的支持！"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_3" />
+
+    <EditText
+        android:id="@+id/et_e_mail"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white_color"
+        android:hint="请留下您的邮箱，以便回复您（选填）"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/text_size_3" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_5" />
+</LinearLayout>

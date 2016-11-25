@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6ed56a"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:onClick="onBack"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/back_ico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="申请换班"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择社团"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text_color2"
+            android:textSize="@dimen/text_size_4" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/pull_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Subject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dip"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择科目"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text_color2"
+            android:textSize="@dimen/text_size_4" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:src="@mipmap/pull_down" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="12dp"
+        android:paddingRight="18dp"
+        android:paddingTop="12dp"
+        android:text="只能在本机构中申请换班，并需要管理老师同意"
+        android:textColor="@color/text_color2"
+        android:textSize="@dimen/text_size_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="情况说明"
+        android:textColor="@color/text_color1"
+        android:textSize="@dimen/text_size_4" />
+
+    <EditText
+        android:id="@+id/et_data"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="1dip"
+        android:background="@color/white_color"
+        android:gravity="top"
+        android:hint="请输入换班原因.."
+        android:paddingBottom="10dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/text_size_3" />
+</LinearLayout>

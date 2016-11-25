@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/logging_bg"
+    android:orientation="vertical"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="欢迎回来"
+        android:textColor="@color/text_color2"
+        android:textSize="@dimen/text_size_6" />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="请输入您的手机号"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="@dimen/text_size_5" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/edit_text_bg"
+        android:digits="@string/register_name_digits"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="@dimen/text_size_5" />
+
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_5" />
+</LinearLayout>

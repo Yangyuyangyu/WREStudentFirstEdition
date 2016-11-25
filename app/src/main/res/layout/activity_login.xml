@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="84dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_logging"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginRight="84dp"
+            android:layout_marginTop="12dp"
+            android:background="@mipmap/btn_register_bg"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/text_color2"
+            android:textSize="@dimen/text_size_4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="忘记密码？"
+            android:textColor="@color/text_color2"
+            android:textSize="@dimen/text_size_4" />
+    </LinearLayout>
+</LinearLayout>

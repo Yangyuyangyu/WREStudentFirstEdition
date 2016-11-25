@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6ed56a"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:onClick="onBack"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/back_ico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/we_ico" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="学美客户端"
+                    android:textColor="@color/text_color1"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/tv_version_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_color3"
+                    android:textSize="@dimen/text_size_2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="6dp"
+                    android:background="#e5e5e5" />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="15dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="客服热线：400-88-20"-->
+                        <!--android:textColor="@color/text_color1"-->
+                        <!--android:textSize="@dimen/text_size_3" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/wb_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:paddingTop="30dp"-->
+                <!--android:text="正式成立于2011年9月,公司前身是深圳市一致电子科技 有限公司，致力于电子产品的制造业领域长达十年.为适应 市场发出趋势，公司于2011年9月成功转型，我们已全力进 军互联网行业电子商务领域。依托有“世界工厂”之称的深圳 和东莞制造业基地，尤其以电子产品著称。我们先后和七家 工厂签约并建立长期的合作关系，为我们向您提供最优质的 产品奠定了坚实的基础，同时售后服务得到保障。\n\n 让您更放心。 在我们不断的努力开拓下，我们的电子商 务平台&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;时尚消费电子商城（http://www.xfdzm all.com）是中国B2C市场电子网购专业平台之一。商城始 终坚持以纯电子商务模式运营，缩减中间环节，为消费者在 第一时间提供优质的产品及满意的服务。提供了灵活多样的 罗天下的便捷。"-->
+                <!--android:textSize="@dimen/text_size_3" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="45dp"-->
+                <!--android:text="Copyright 2014-2016 学美版权所有"-->
+                <!--android:textColor="#767676"-->
+                <!--android:textSize="@dimen/text_size_1" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="四川成都学美科技有限公司"-->
+                <!--android:textColor="#767676"-->
+                <!--android:textSize="@dimen/text_size_1" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
